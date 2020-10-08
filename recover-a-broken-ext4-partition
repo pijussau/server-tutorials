@@ -1,0 +1,14 @@
+In case of total failure of booting a system:
+  
+  Steps:
+    Start rescue system
+    
+   Run commands:
+     lsblk -l
+     mount /dev/md2 /mnt (where as md2 is the partition name)
+  
+  To recover lost Root password:
+    chroot-prepare /mnt
+    chroot /mnt
+    passwd
+    exit
