@@ -4,3 +4,6 @@ Install MySQL and increase connections to 100.000:
     sudo apt update
     sudo apt install mysql-server
     sudo mysql_secure_installation
+
+   To check threads running on MySQL:
+     mysqladmin -u root -p status
