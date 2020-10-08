@@ -5,3 +5,4 @@ Install XRDP:
   /etc/init.d/xrdp start
   /etc/init.d/xrdp status
   
+Make sure you have the RDP port open
