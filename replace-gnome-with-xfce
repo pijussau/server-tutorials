@@ -12,7 +12,11 @@ Perform all of these as root in a terminal window, or prepend with sudo. (Look e
 
     Install XFCE Desktop environment:
 
-    apt-get install xubuntu-desktop
+    apt-get install xfce4
+    
+    To enable XFCE on boot time:
+    
+    echo “xfce4-session” > ~/.xsession
 
     Restart lightdm:
 
