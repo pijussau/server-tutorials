@@ -7,11 +7,14 @@ Perform all of these as root in a terminal window, or prepend with sudo. (Look e
     apt-get update
 
     Uninstall Unity and ubuntu-desktop:
+    
+    sudo apt-get remove nautilus nautilus-* gnome-power-manager gnome-screensaver gnome-termina* gnome-pane* gnome-applet* gnome-bluetooth gnome-desktop* gnome-sessio* gnome-user* gnome-shell-common zeitgeist-core libzeitgeist* gnome-control-center gnome-screenshot gnome* && sudo apt-get autoremove
 
     apt-get purge ubuntu-desktop unity-*
 
     Install XFCE Desktop environment:
-
+    
+    sudo apt install xubuntu-desktop
     apt-get install xfce4
     
     To enable XFCE on boot time:
