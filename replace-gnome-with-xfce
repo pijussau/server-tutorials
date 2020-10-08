@@ -1,0 +1,21 @@
+Replacing Unity with XFCE in Ubuntu
+
+Perform all of these as root in a terminal window, or prepend with sudo. (Look elsewhere for GUI steps 🙂 )
+
+    Update your repos:
+
+    apt-get update
+
+    Uninstall Unity and ubuntu-desktop:
+
+    apt-get purge ubuntu-desktop unity-*
+
+    Install XFCE Desktop environment:
+
+    apt-get install xubuntu-desktop
+
+    Restart lightdm:
+
+    /etc/init.d/lightdm restart
+
+Voilà! You’re using XFCE desktop! 😉
