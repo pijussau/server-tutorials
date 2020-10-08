@@ -1,0 +1,7 @@
+Enable RDP (Remote Desktop) on Ubuntu:
+
+Install XRDP:
+  apt-get install xrdp
+  /etc/init.d/xrdp start
+  /etc/init.d/xrdp status
+  
