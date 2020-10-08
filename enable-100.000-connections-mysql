@@ -1,1 +1,5 @@
-gfgfd
+Install MySQL and increase connections to 100.000:
+  
+  Install Mysql:
+    sudo apt update
+    sudo apt install mysql-server
