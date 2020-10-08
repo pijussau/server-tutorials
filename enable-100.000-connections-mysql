@@ -8,6 +8,10 @@ Increase MySQL connections to max connections:
    Server speficis:
      ulimit -a
        raise ram until max user processes is more than 100.000 (around 32GB RAM)
-
+    
+    
    To check threads running on MySQL:
      mysqladmin -u root -p status
+   
+   To check maximum open files on MySQL:
+     SHOW VARIABLES LIKE 'open%';
