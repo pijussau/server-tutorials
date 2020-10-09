@@ -1,3 +1,9 @@
 Inside /etc/passwd
   Change user to pijus:x:0:1000:Pijus,,,:/home/pijus:/bin/bash
+  
+  Enable remote access
+    Inside /etc/ssh/sshd_config
+      Change RemoteRootAccess to Yes
+      
+  sudo systemctl restart ssh
   logout
