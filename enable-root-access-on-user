@@ -1,1 +1,3 @@
-Coming soon
+Inside /etc/passwd
+  Change user to pijus:x:0:1000:Pijus,,,:/home/pijus:/bin/bash
+  logout
