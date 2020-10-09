@@ -44,4 +44,4 @@ Perform all of these as root in a terminal window, or prepend with sudo. (Look e
 
     /etc/init.d/lightdm restart
 
-Voilà! You’re using XFCE desktop! 😉
+Voilà! You’re using XFCE desktop! 😉 (WILL NOT WORK)
