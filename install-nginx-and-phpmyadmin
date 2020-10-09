@@ -4,10 +4,29 @@ Install Niginx and add secure PHPMyAdmin:
   sudo ufw allow 'Nginx Full'
   systemctl status nginx
   
-To setup a server block: (PHPMyAdmin)
+To setup PhpMyAdmin:
   sudo mkdir -p /var/www/phpmyadmin
   wget https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-all-languages.zip
-  unzip phpMyAdmin-5.0.2-all-languages.zip
+  unzip phpMyAdmin-5.0.2-all-languages.zip (and delete Setup folder)
+  
+To setup a server block:
+  sudo nano /etc/nginx/sites-available/pma.supportdedicated.com
+  
+  Add a server block:
+     server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/phpmyadmin;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name supportdedicated.com www.supportdedicated.com;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+      }
+  
   
 To manage Nginx:
   sudo systemctl stop nginx
