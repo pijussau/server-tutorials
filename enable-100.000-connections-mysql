@@ -15,3 +15,22 @@ Increase MySQL connections to max connections:
    
    To check maximum open files on MySQL:
      SHOW VARIABLES LIKE 'open%';
+
+
+Resources:
+https://stackoverflow.com/questions/35111698/unable-to-increase-mysql-open-files-limit
+
+ulimit -a
+
+https://stackoverflow.com/questions/35111698/unable-to-increase-mysql-open-files-limit (denne er riktig)
+
+https://www.google.com/search?q=increase+open_files_limit&rlz=1C1GCEU_noNO918NO918&oq=increase+open_files_limit&aqs=chrome..69i57j0l7.2294j0j4&sourceid=chrome&ie=UTF-8
+
+
+https://dxtright.com/index.php/2018/02/11/cant-increase-max_connections-mysql-ubuntu/
+
+https://dba.stackexchange.com/questions/12061/mysql-auto-adjusting-max-connections-values
+
+https://tableplus.com/blog/2018/11/error-1040-too-many-connection-increase-max-connections-mysql.html
+
+https://www.percona.com/blog/2017/10/12/open_files_limit-mystery/
