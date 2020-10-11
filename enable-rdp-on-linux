@@ -1,8 +1,9 @@
 Enable RDP (Remote Desktop) on Ubuntu:
 
-Install XRDP:
-  apt-get install xrdp
-  /etc/init.d/xrdp start
-  /etc/init.d/xrdp status
-  
-Make sure you have the RDP port open
+  Install NoMachine:
+    cd Desktop
+    wget wget https://download.nomachine.com/download/6.12/Linux/nomachine_6.12.3_7_amd64.deb
+    sudo dpkg -i nomachine_6.12.3_7_amd64.deb
+    
+Be sure to always check for latest version here:
+  https://www.nomachine.com/download/linux&id=1
