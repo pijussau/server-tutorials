@@ -1,0 +1,12 @@
+Install remote ssh extension for vsCode
+
+Do key from putty to openSSH
+
+Host 135.181.4.203
+  HostName 135.181.4.203
+  User pijus
+
+Host Tranberg
+  HostName 46.255.23.6
+  User pijus
+  IdentityFile C:\Users\pijus\Documents\ssh_keys\openssh
