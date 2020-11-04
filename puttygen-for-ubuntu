@@ -1,0 +1,9 @@
+Use Putty with Ubuntu:
+Generate public and private key (and also generate openssh key)
+mkdir ~/.ssh | touch ~/.ssh/authorized_keys
+
+If you get SSH Authentication Refused: Bad Ownership or Modes for Directory inside /var/log/auth.log:
+chmod g-w /home/pijus
+chmod 700 /home/pijus/.ssh
+chmod 600 /home/pijus/.ssh/authorized_keys
+sudo chown -R pijus:pijus /home/pijus
