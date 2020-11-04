@@ -1,0 +1,28 @@
+sudo apt install openvpn easy-rsa
+mkdir ~/openvpn
+ln -s /usr/share/easy-rsa/* ~/openvpn/
+cd ~/openvpn
+
+nano vars
+	write:
+	set_var EASYRSA_ALGO "ec"
+	set_var EASYRSA_DIGEST "sha512"
+
+To initalize a key: ./easyrsa init-pki
+
+Output:
+
+Note: using Easy-RSA configuration from: ./vars
+
+init-pki complete; you may now create a CA or requests.
+Your newly created PKI dir is: /home/pijus/openvpn/pki
+
+cd ~/openvpn
+
+./easyrsa build-ca
+
+You can find your private key:
+/home/pijus/openvpn/pki/private
+
+And public key:
+/home/pijus/openvpn/pki/ca.crt
