@@ -1,0 +1,15 @@
+Create a bash script convert.sh
+  
+  for i in `iconv -l`
+do
+   echo $i
+   iconv -f $i -t UTF-8 yourfile | grep "hint to tell converted success or not"
+done &>/tmp/converted
+
+chmod +x convert.sh
+./convert.sh
+
+Inside /tmp/converted you will find all the correct conversations
+
+Convert back to UTF-8 by running:
+  iconv -f ISO-8859-1 -t UTF-8 Webinfo.txt -o Webinfo1.txt
