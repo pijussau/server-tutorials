@@ -1,3 +1,23 @@
 sudo apt-get install xrdp  
 apt-get install xfce4
 echo xfce4-session > ~/.xsession (this line add xfce4-session to .xsession)
+apt -y install xrdp tigervnc-standalone-server
+
+
+
+For problems:
+  Please check inside /home/user/.xsession file
+  sudo chown -R administrator:administrator /home/administrator
+  
+  sudo apt-get install --reinstall xorg
+  sudo systemctl set-default graphical.target
+ sudo apt install ubuntu-desktop
+ 
+ 
+ More troubleshotting:
+ sudo apt-get install xfwm4 xfce4-panel xfce4-settings xfce4-session xfce4-terminal xfdesktop4 xfce4-taskmanager tango-icon-theme
+sudo apt-get install lightdm lightdm-gtk-greeter
+sudo systemctl set-default graphical.target
+
+Problems:
+Maybe lightdm is not started
