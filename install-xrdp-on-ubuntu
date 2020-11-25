@@ -1,0 +1,3 @@
+For problems:
+  Please check inside /home/user/.xsession file
+  sudo chown -R administrator:administrator /home/administrator
