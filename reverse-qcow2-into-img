@@ -1,0 +1,12 @@
+https://askubuntu.com/questions/195139/how-to-convert-qcow2-virtual-disk-to-physical-machine-and-reversely
+
+sudo apt-get install -y nautilus
+sudo apt-get install gnome-disk-utility
+
+To mount:
+sudo dd if=/root/ of=/dev/sd1
+
+=
+
+https://unix.stackexchange.com/questions/316401/how-to-mount-a-disk-image-from-the-command-line
+https://unix.stackexchange.com/questions/82314/how-to-find-the-type-of-an-img-file-and-mount-it
