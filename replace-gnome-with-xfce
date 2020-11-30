@@ -1,5 +1,5 @@
 sudo apt-get install xrdp  
-apt-get install xfce4
+apt-get install -y xfce4 xfce4-goodies
 echo xfce4-session > ~/.xsession (this line add xfce4-session to .xsession)
 apt -y install xrdp tigervnc-standalone-server
 
