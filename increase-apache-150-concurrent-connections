@@ -8,4 +8,15 @@ Inside /etc/apache2/mods-enabled/mpm_prefork.conf change to:
           MaxConnectionsPerChild    1000 
 </IfModule>
 
+OR to disable worker creation/destruction all togheter.
+
+<IfModule mpm_prefork_module>
+    StartServers          150
+    MinSpareServers       150
+    MaxSpareServers       150
+    MaxClients            150
+    Serverlimit           150
+    MaxRequestsPerChild   10000
+</IfModule>
+
 run service apache2 reload
