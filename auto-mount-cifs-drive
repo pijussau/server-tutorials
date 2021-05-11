@@ -1,0 +1,7 @@
+Inside /etc/fstab  
+
+Add:  
+//u253771.your-storagebox.de/backup /mnt cifs username=u253771,password=g7oaDZfsd22RffsdrCFddunPN9,iocharset=utf8,sec=ntlmssp 0 0  
+
+To test if working  
+mount -a
