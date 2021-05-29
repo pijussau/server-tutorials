@@ -1,0 +1,3 @@
+$ sudo ip addr flush interface-name 
+$ sudo systemctl restart networking 
+https://askubuntu.com/questions/103171/editing-network-interfaces-without-system-rebooting 
