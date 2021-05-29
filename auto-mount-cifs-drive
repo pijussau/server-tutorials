@@ -1,3 +1,5 @@
+sudo apt install cifs-utils 
+
 Inside /etc/fstab  
 
 Add:  
@@ -5,3 +7,5 @@ Add:
 
 To test if working  
 mount -a
+
+
