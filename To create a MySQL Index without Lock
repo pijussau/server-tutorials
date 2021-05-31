@@ -1,0 +1,3 @@
+To create a simple index without lock:
+ALTER TABLE my_table ADD INDEX my_table__idx (my_column), ALGORITHM=INPLACE, LOCK=NONE;  
+https://stackoverflow.com/questions/4244685/create-an-index-on-a-huge-mysql-production-table-without-table-locking 
