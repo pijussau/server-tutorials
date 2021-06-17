@@ -1,0 +1,11 @@
+apt install rclone  
+rclone config  
+rclone lsd <name_of_blob>:  
+mkdir /<_name_of_blob>  
+rclone mount <name_of_blob>:<name_of_upload_directory> /mnt/<name_of_blob> --daemon
+
+To check if blob is attached:
+mount -l  
+
+To activate at reboot:
+Add @reboot rclone mount blob:rclone /blob --daemon into crontab -e  
